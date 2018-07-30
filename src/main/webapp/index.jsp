@@ -3,7 +3,7 @@
 <HTML>
 <HEAD><TITLE>Cluster - Ha JSP Sample </TITLE></HEAD>
 <BODY BGCOLOR="white">
-<H1>Kanstantsin Navichuk Less Simple App</H1>
+<H1>Kanstantsin Navichuk Less App</H1>
 <B>HttpSession Information:</B>
 <UL>
 <LI>Build Number: </LI>
