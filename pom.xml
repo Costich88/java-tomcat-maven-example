@@ -1,22 +1,21 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.example</groupId>
-  <artifactId>java-tomcat-maven-example</artifactId>
+  <groupId>com.test</groupId>
+  <artifactId>mvn-test</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>hello Maven Webapp</name>
+  <version>1.${build.number}</version>
+  <name>Maven Simple Application</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>4.8.2</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
-    <finalName>java-tomcat-maven-example</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -41,4 +40,17 @@
       </plugin>
     </plugins>
   </build>
+  
+   <properties>
+    <maven.compiler.source>1.6</maven.compiler.source>
+    <maven.compiler.target>1.6</maven.compiler.target>
+ </properties>
+  
+  <distributionManagement>
+      <repository>
+        <id>maven-releases</id>
+        <url>http://192.168.1.4:8081/repository/maven-releases/</url>
+      </repository>
+</distributionManagement>
+  
 </project>
