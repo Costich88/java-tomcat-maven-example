@@ -6,6 +6,7 @@
 <H1>Kanstantsin Navichuk Simple App</H1>
 <B>HttpSession Information:</B>
 <UL>
+<LI>Build Number: </LI>
 <LI>Served From Server:   <b><%= request.getServerName() %></b></LI>
 <LI>Server Port Number:   <b><%= request.getServerPort() %></b></LI>
 <LI>Executed From Server: <b><%= java.net.InetAddress.getLocalHost().getHostName() %></b></LI>
