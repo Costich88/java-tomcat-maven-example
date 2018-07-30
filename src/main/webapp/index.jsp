@@ -3,7 +3,7 @@
 <HTML>
 <HEAD><TITLE>Cluster - Ha JSP Sample </TITLE></HEAD>
 <BODY BGCOLOR="white">
-<H1>Cluster - HA JSP Sample </H1>
+<H1>Kanstantsin Navichuk Simple App</H1>
 <B>HttpSession Information:</B>
 <UL>
 <LI>Served From Server:   <b><%= request.getServerName() %></b></LI>
@@ -40,29 +40,6 @@
     }
 %>
 <HR><BR>
-<B>Data retrieved from the HttpSession: </B>
-<% 
-    java.util.Enumeration valueNames = session.getAttributeNames();
-    if (!valueNames.hasMoreElements()) {
-        System.out.println("No parameter entered for this request");
-    } else {
-        out.println("<UL>");
-        while (valueNames.hasMoreElements()) {
-            String param = (String) valueNames.nextElement();
-            String value = session.getAttribute(param).toString();
-            out.println("<LI>" + param + " = " + value + "</LI>");
-        }
-        out.println("</UL>");
-    }
-%>
-<BR><BR>
-<HR>
-<B>INSTRUCTIONS</B>
-<UL>
-<LI>Add session data using the form. Upon pressing ADD SESSION DATA, the current session data will be listed.</LI>
-<LI>Click on RELOAD PAGE to display the current session data without adding new data.</LI>
-<LI>Click on CLEAR SESSION to invalidate the current session.</LI>
-</UL>
 
 </BODY>
 </HTML>
